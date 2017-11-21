@@ -1,0 +1,29 @@
+<!-- this is to display json values in html -->
+
+ <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sample Page</title>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+    <script>
+    $(function() {
+      var result = {key: "userName", value: "shekharkaran"};
+      var tblRow = "<tr>" + "<td>" + result.value + "</td> "+"</tr>"
+      $(tblRow).appendTo("#userdata tbody");
+
+    });
+
+    </script>
+  </head>
+  <body>
+    <table id= "userdata" border="2">
+    <thead>
+              <th>FirstName</th>
+      </thead>
+        <tbody>
+
+         </tbody>
+     </table>
+  </body
+</html>
